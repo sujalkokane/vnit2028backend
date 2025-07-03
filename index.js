@@ -39,3 +39,5 @@ app.get("/api/min", (req, res) => {
 app.listen(8000, () => {
   console.log("Server Startd");
 });
+module.exports = app;
+module.exports.handler = serverless(app);
